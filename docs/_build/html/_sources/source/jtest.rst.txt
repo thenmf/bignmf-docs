@@ -1,7 +1,0 @@
-jtest module
-============
-
-.. automodule:: jtest
-    :members:
-    :undoc-members:
-    :show-inheritance:
