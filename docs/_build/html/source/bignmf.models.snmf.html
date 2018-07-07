@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bignmf.models.snmf package &mdash; BigNmf 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> BigNmf
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">bignmf.models.snmf package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-bignmf.models.snmf.snmf_base">bignmf.models.snmf.snmf_base module</a></li>
+<li><a class="reference internal" href="#module-bignmf.models.snmf.sparse">bignmf.models.snmf.sparse module</a></li>
+<li><a class="reference internal" href="#module-bignmf.models.snmf.standard">bignmf.models.snmf.standard module</a></li>
+<li><a class="reference internal" href="#module-bignmf.models.snmf">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">BigNmf</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>bignmf.models.snmf package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/bignmf.models.snmf.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bignmf-models-snmf-package">
+<h1>bignmf.models.snmf package<a class="headerlink" href="#bignmf-models-snmf-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-bignmf.models.snmf.snmf_base">
+<span id="bignmf-models-snmf-snmf-base-module"></span><h2>bignmf.models.snmf.snmf_base module<a class="headerlink" href="#module-bignmf.models.snmf.snmf_base" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase">
+<em class="property">class </em><code class="descclassname">bignmf.models.snmf.snmf_base.</code><code class="descname">SnmfBase</code><span class="sig-paren">(</span><em>x: pandas.core.frame.DataFrame</em>, <em>k: int</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="bignmf.models.html#bignmf.models.nmf.NmfBase" title="bignmf.models.nmf.NmfBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">bignmf.models.nmf.NmfBase</span></code></a></p>
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.calc_consensus_matrices">
+<code class="descname">calc_consensus_matrices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.calc_consensus_matrices"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.calc_consensus_matrices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.calc_cophenetic_correlation">
+<code class="descname">calc_cophenetic_correlation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.calc_cophenetic_correlation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.calc_cophenetic_correlation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculated the cophentic correlation co-efficients and stores it in the instance.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.calc_error">
+<code class="descname">calc_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.calc_error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.calc_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the euclidean distance error with the following formulae.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.cluster_data">
+<code class="descname">cluster_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.cluster_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.cluster_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clusters the output matrices, W and the other H matrices.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.initialize_variables">
+<code class="descname">initialize_variables</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.initialize_variables"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.initialize_variables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes consensus matrices. It is run before the iterations of the various trials</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.initialize_wh">
+<code class="descname">initialize_wh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.initialize_wh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.initialize_wh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.run">
+<code class="descname">run</code><span class="sig-paren">(</span><em>trials</em>, <em>iterations</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the NMF algorithm for the specified iterations over the specified trials</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>(</strong><strong>int}</strong> (<em>iterations</em>) – Number of different trials.</li>
+<li><strong>(</strong><strong>int}</strong> – Number of iterations.</li>
+<li><strong>verbose</strong> (<em>bool</em>) – To increase verbosity. Defaults to 0.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.snmf_base.SnmfBase.update_weights">
+<code class="descname">update_weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/snmf_base.html#SnmfBase.update_weights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.snmf_base.SnmfBase.update_weights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-bignmf.models.snmf.sparse">
+<span id="bignmf-models-snmf-sparse-module"></span><h2>bignmf.models.snmf.sparse module<a class="headerlink" href="#module-bignmf.models.snmf.sparse" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="bignmf.models.snmf.sparse.SparseNmf">
+<em class="property">class </em><code class="descclassname">bignmf.models.snmf.sparse.</code><code class="descname">SparseNmf</code><span class="sig-paren">(</span><em>x: pandas.core.frame.DataFrame</em>, <em>k: int</em>, <em>spars: int</em>, <em>beta: int</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/sparse.html#SparseNmf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.sparse.SparseNmf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bignmf.models.snmf.snmf_base.SnmfBase" title="bignmf.models.snmf.snmf_base.SnmfBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">bignmf.models.snmf.snmf_base.SnmfBase</span></code></a></p>
+<p>The update rule used in Sparse NMF has been taken from the paper Roux, J.L. (2015). Sparse NMF – half-baked or well done ?.</p>
+<dl class="method">
+<dt id="bignmf.models.snmf.sparse.SparseNmf.initialize_wh">
+<code class="descname">initialize_wh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/sparse.html#SparseNmf.initialize_wh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.sparse.SparseNmf.initialize_wh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the variables that will be required for Sparse NMF.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.sparse.SparseNmf.update_weights">
+<code class="descname">update_weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/sparse.html#SparseNmf.update_weights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.sparse.SparseNmf.update_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates W,H and A so that they converge in such a way that W.H = X</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-bignmf.models.snmf.standard">
+<span id="bignmf-models-snmf-standard-module"></span><h2>bignmf.models.snmf.standard module<a class="headerlink" href="#module-bignmf.models.snmf.standard" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="bignmf.models.snmf.standard.StandardNmf">
+<em class="property">class </em><code class="descclassname">bignmf.models.snmf.standard.</code><code class="descname">StandardNmf</code><span class="sig-paren">(</span><em>x: pandas.core.frame.DataFrame</em>, <em>k: int</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/standard.html#StandardNmf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.standard.StandardNmf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bignmf.models.snmf.snmf_base.SnmfBase" title="bignmf.models.snmf.snmf_base.SnmfBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">bignmf.models.snmf.snmf_base.SnmfBase</span></code></a></p>
+<p>Standard Single NMF algorithm class</p>
+<p>The algorithm facotrizes the input matrix into two subamtrices <code class="docutils literal notranslate"><span class="pre">W</span></code> and <code class="docutils literal notranslate"><span class="pre">H</span></code>.
+For more detailed information on the algorithm, here’s the reference to the original paper.</p>
+<blockquote>
+<div>Lee et al. Learning the parts of objects by non-negative matrix factorization.
+Nature(1999);401:788–791</div></blockquote>
+<dl class="method">
+<dt id="bignmf.models.snmf.standard.StandardNmf.initialize_wh">
+<code class="descname">initialize_wh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/standard.html#StandardNmf.initialize_wh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.standard.StandardNmf.initialize_wh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the model variables.</p>
+<p>Variables:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bignmf.models.snmf.standard.StandardNmf.update_weights">
+<code class="descname">update_weights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/bignmf/models/snmf/standard.html#StandardNmf.update_weights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bignmf.models.snmf.standard.StandardNmf.update_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates W and H so that they converge in such a way that W.H = X</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-bignmf.models.snmf">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-bignmf.models.snmf" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Vaibhav Kulshrestha, Haran Rajkumar.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
